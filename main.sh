@@ -18,9 +18,19 @@ sudo apt install \
 echo "Now we're configuring qgh and git...(under construction)"
 # TODO(pablothedeveloper): I had some command I ran here.
 # I will see if I can recall them.
+gh auth login # This logs me into github
+# TODO(pablothedeveloper): figure out how to add user input
+# Navigates gh auth login screen
+echo "\n\nY\n" # this should be an enter keypress 
+echo "\033\n" # down arrow
+read code
+echo "$code\n"
 
+# 
+git config --global user.email "pablothedeveloper@gmail.com"
+git config --global user.name "pablothedeveloper"
 
-# TODO(ramospablo): This todo is for lots of things.
+# TODO(pablothedeveloper): This todo is for lots of things.
 # 1. I should have a style enforcer on the bash I'm writing. For now, I'll live with wrapped text.
 # 2. I should make the history command persist beyond a terminal session.
 # 3. I should setup bats to test this bash script.
