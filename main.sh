@@ -5,13 +5,15 @@ echo "We need to start at the \$HOME directory so we'll cd to that."
 cd $HOME
 
 echo "Now we're installing a few packages..."
+sudo apt update
 
 sudo apt install \
 	vim \
 	git \
 	gh  \
-	curl \
-	docker
+	curl
+
+#TODO(pablothedeveloper): Check that these packages are actually installed...
 
 echo "Now we're configuring qgh and git...(under construction)"
 # TODO(pablothedeveloper): I had some command I ran here.
@@ -30,3 +32,6 @@ if [ -d "$HOME/init-me" ]; then
 else
 	gh repo clone PabloTheDeveloper/init-me
 fi
+
+# TODO(pablothedeveloper): installing docker might be tricky (in that there's not one simple command).
+# https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
