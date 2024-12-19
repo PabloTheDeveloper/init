@@ -1,9 +1,9 @@
 #!/bin/bash
 
 echo "The installer for Init-Me is being run!"
-echo "We need to start at the \$HOME directory so we'll cd to that.\n"
+echo "We need to start at the \$HOME directory so we'll cd to that."
 cd $HOME
-echo "current directory:$PWD"
+echo "current directory: $PWD"
 
 echo "Now we're updating some packages.."
 sudo apt update
