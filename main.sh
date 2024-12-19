@@ -16,15 +16,19 @@ sudo apt install \
 #TODO(pablothedeveloper): Check that these packages are actually installed...
 
 echo "Now we're configuring qgh and git...(under construction)"
-# TODO(pablothedeveloper): I had some command I ran here.
+# imports file to call function which sets the github token.
+
+source $HOME/init-me/lib.sh
+
+set_gh_token_env
 # I will see if I can recall them.
-gh auth login # This logs me into github
+# gh auth login # This logs me into github
 # TODO(pablothedeveloper): figure out how to add user input
 # Navigates gh auth login screen
-echo "\n\nY\n" # this should be an enter keypress 
-echo "\033\n" # down arrow
-read code
-echo "$code\n"
+#echo "\n\nY\n" # this should be an enter keypress 
+#echo "\033\n" # down arrow
+#read code
+#echo "$code\n"
 
 # 
 git config --global user.email "pablothedeveloper@gmail.com"
