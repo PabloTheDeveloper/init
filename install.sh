@@ -1,17 +1,12 @@
 #!/bin/bash
 
 echo "The installer for Init-Me is being run!"
-sleep(5);
-
-echo "We need to start at the \$HOME directory so we'll cd to that."
+echo "We need to start at the \$HOME directory so we'll cd to that.\n"
 cd $HOME
 echo "current directory:$PWD"
-sleep(5);
 
 echo "Now we're updating some packages.."
 sudo apt update
-
-sleep(5);
 
 echo "installing: vim, git, gh, curl"
 
