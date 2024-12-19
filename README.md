@@ -3,14 +3,9 @@ init-me installs all needed packages for a frictionless development environment.
 
 # Quickstart
 
-## Step 1: Download the bash script
+## Step 1: Download and execute the bash script
 ```
-curl -s https://raw.githubusercontent.com/PabloTheDeveloper/init-me/master/main.sh > tmp.sh
-```
-
-## Step 2: Execute script
-```
-bash tmp.sh
+curl -s https://raw.githubusercontent.com/PabloTheDeveloper/init-me/main/install.sh | bash
 ```
 
 # Development Roadmap
