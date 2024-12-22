@@ -45,8 +45,8 @@ eval "$(ssh-agent -s)"
 gh ssh-key add ~/.ssh/id_ed25519.pub --type signing
 gh config set git_protocol ssh --host github.com
 
-# read -p "Enter GH_TOKEN:" gh_token
-# export GH_TOKEN="$gh_token"
+read -p "Enter GH_TOKEN:" gh_token
+export GH_TOKEN="$gh_token"
 # gh auth login
 
 echo "Now we're importing the Init-Me project from github."
