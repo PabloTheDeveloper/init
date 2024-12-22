@@ -43,18 +43,19 @@ echo "Init-Me will generate github projects so we'll need to set up ssh."
 ssh-keygen -t ed25519 -C "$email"
 eval "$(ssh-agent -s)"
 gh ssh-key add ~/.ssh/id_ed25519.pub --type signing
+gh config set git_protocol ssh --host github.com
 
-
-read -p "Enter GH_TOKEN:" gh_token
-export GH_TOKEN="$gh_token"
-gh auth login
+# read -p "Enter GH_TOKEN:" gh_token
+# export GH_TOKEN="$gh_token"
+# gh auth login
 
 echo "Now we're importing the Init-Me project from github."
 if [ -d "$HOME/init-me" ]; then
 	echo "Init-Me was already imported so skipping that"
 else
-	gh repo clone PabloTheDeveloper/init-me
+	gh repo clone git@github.com:PabloTheDeveloper/init-me.git
 fi
+exit 1
 # -------------------------------------------------------------------------------
 # Installing Docker
 # -------------------------------------------------------------------------------
