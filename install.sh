@@ -27,11 +27,11 @@ echo "Now we're configuring gh and git..."
 # -------------------------------------------------------------------------------
 # Setting Git Configs
 # -------------------------------------------------------------------------------
-read -p "Email: (defaults to my @noreply.github.com email address)" email
+read -p "Email (defaults to my @noreply.github.com email address):" email
 email=${email:-"30012721+PabloTheDeveloper@users.noreply.github.com"}
 git config --global user.email "$email"
 
-read -p "Enter username (defaults to PabloTheDeveloper)" username
+read -p "Enter username (defaults to PabloTheDeveloper):" username
 username=${username:-"PabloTheDeveloper"}
 git config --global user.name "$username"
 
@@ -39,23 +39,24 @@ gh config set editor vim
 # -------------------------------------------------------------------------------
 # Setting up SSH & cloning Init-Me 
 # -------------------------------------------------------------------------------
-echo "Init-Me will generate github projects so we'll need to set up ssh." 
+echo "Init-Me will generate github projects so we'll need to set up ssh."
+echo "Creates a private key & public key."
 ssh-keygen -t ed25519 -C "$email"
 eval "$(ssh-agent -s)"
-gh ssh-key add ~/.ssh/id_ed25519.pub --type signing
-gh config set git_protocol ssh --host github.com
 
-read -p "Enter GH_TOKEN:" gh_token
-export GH_TOKEN="$gh_token"
-# gh auth login
-
+# read -p "Enter GH_TOKEN:" gh_token
+# export GH_TOKEN="$gh_token"
+gh config set git_protocol ssha
+echo "Now we'll upload our public ssh key."
+gh auth login --git-protocol ssh 
+# TDoesn't: gh ssh-key add ~/.ssh/id_ed25519.pub --type signing
 echo "Now we're importing the Init-Me project from github."
 if [ -d "$HOME/init-me" ]; then
 	echo "Init-Me was already imported so skipping that"
 else
 	gh repo clone git@github.com:PabloTheDeveloper/init-me.git
 fi
-exit 1
+
 # -------------------------------------------------------------------------------
 # Installing Docker
 # -------------------------------------------------------------------------------
