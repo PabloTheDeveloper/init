@@ -81,7 +81,7 @@ dockerd-rootless-setuptool.sh install
 
 echo "Adding two environment variables to ~/bashrc"
 touch ~/.bashrc
-"export PATH=/usr/bin:$PATH" \
+"export PATH=/usr/bin:$PATH" > ~/.bashrc
 "export DOCKER_HOST=unix:///run/user/1000/docker.sock" > ~/.bashrc
 # -------------------------------------------------------------------------------
 # Build Init-Me & Add To Path
