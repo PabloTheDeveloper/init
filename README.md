@@ -20,4 +20,4 @@ init-me installs all needed packages for a frictionless development environment.
 curl -s https://raw.githubusercontent.com/PabloTheDeveloper/init-me/main/install.sh | bash
 ```
 
-Or copy the contents of the`install.sh` function and run in your terminal.
+Or copy the contents of the `install.sh` function and run in your terminal.
