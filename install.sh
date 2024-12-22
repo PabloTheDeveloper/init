@@ -48,8 +48,8 @@ fi
 # -------------------------------------------------------------------------------
 echo "Init-Me will generate github projects so we'll need to set up ssh." 
 ssh-keygen -t ed25519 -C "$email"
-ssh-agent
-gh ssh-key add ~/.ssh/id_ed25519.pub
+eval "$(ssh-agent -s)"
+gh ssh-key add ~/.ssh/id_ed25519.pub --type signing
 
 # -------------------------------------------------------------------------------
 # Installing Docker
@@ -76,9 +76,9 @@ echo "There are technical limitations with this approach. Be wary."
 dockerd-rootless-setuptool.sh install
 
 echo "Adding two environment variables to ~/bashrc"
-touch .bashrc
+touch ~/.bashrc
 "export PATH=/usr/bin:$PATH" \
-"export DOCKER_HOST=unix:///run/user/1000/docker.sock" > .bashrc
+"export DOCKER_HOST=unix:///run/user/1000/docker.sock" > ~/.bashrc
 # -------------------------------------------------------------------------------
 # Build Init-Me & Add To Path
 # -------------------------------------------------------------------------------
