@@ -5,7 +5,7 @@ init-me installs all needed packages for a frictionless development environment.
 
 ## Step 1: Download and execute the bash script
 ```
-curl -s https://raw.githubusercontent.com/PabloTheDeveloper/init-me/main/install.sh > init.bash
+curl -s https://raw.githubusercontent.com/PabloTheDeveloper/init-me/main/install.sh > init.sh
 ```
 
 Or copy the contents of the `install.sh` function and run in your terminal.
