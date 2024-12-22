@@ -9,6 +9,12 @@ curl -s https://raw.githubusercontent.com/PabloTheDeveloper/init-me/main/install
 ```
 
 # Development Roadmap
-1. Setup BATS to test bash script (using bash since most distro have it by default).
-    * [x] Need to install basic packages (vim, git, gh, sway)
-    * [x] Need to run basic configuration for those packages (git.configs, copy base vim file for bash edits, sway files)
+* [x] - auto install docker on WSL2
+* [ ] - start zsh script
+* [ ] - setup development docker images for:
+    * [ ] golang
+    * [ ] python
+    * [ ] 
+* [ ] - create feature which creates scaffolding for project in a image
+* [ ] - provide way to update dependencies on that project
+* [ ] - install sway and related configs
