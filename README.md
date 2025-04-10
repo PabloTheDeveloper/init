@@ -1,5 +1,5 @@
 # Init-me
-init-me installs all my needed packages, configs, etc onto a development machine for a easy, simple, seemless process.
+init-me installs all my needed packages, configs, etc onto a development machine for a easy, simple, seamless process.
 
 If this repo is helpful in any which way, please star or comment. It helps professionally and personally (plus it's a sick to make useful stuff :DD!)
 
