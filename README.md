@@ -1,26 +1,56 @@
-# init-me
-init-me installs all needed packages for a frictionless development environment. Customized for me if ever I need to switch to another laptop or machine.
+# Init-me
+init-me installs all my needed packages, configs, etc onto a development machine for a easy, simple, seemless process.
+
+If this repo is helpful in any which way, please star or comment. It helps professionally and personally (plus it's a sick to make useful stuff :DD!)
+
+## Functions
+Currently, it's customized for me and my main machine so its focus is quite narrow. **However**, if you are similarly position as I am (windows snapdragon wsl2 user), the base tool I like are pretty standard (nvim, zsh, github setup, and docker support).
+
+Although, I'll see about generalizing it (e.g pick which shell, which text editor, to use github, gitlab, etc). Feel free to pull if there's a small tweak needed.
 
 # Quickstart
+## Step 1 - Install WSL2
+Install WSL 2 (FWIW, I'm on wsl version 2.4.13.0).
+Check current version (open a powershell terminal):
+```
+wsl -v
+```
+install if needed.
+*regretably, I didn't write down how I installed it correctly. I assume by now it's straightforward via Google/DuckDuckGo.*
 
-## Step 1: Download and execute the bash script
+## Step 2 - Install Debian
+Install Debian:
+```
+wsl --install Debian
+```
+Install Debian but named as something else (it defaults to "Debian" and personally I like lowercased names so name it "debian"):
+```
+wsl --install Debian --name foobar
+```
+
+## Step 3 - Install Curl
+Switch to Debian and install `curl` (perhaps later Debian versions install it by default).
+```
+sudo apt-get update
+sudo apt install curl --fix-missing
+```
+
+## Step 4: Download and execute the bash script
 ```
 curl -s https://raw.githubusercontent.com/PabloTheDeveloper/init-me/main/install.sh > init.sh
 ```
+Note: Generally, scripts installed this way are super risky. Read through it and any scripts like it to ensure nothing nefarious is happening.
 
-Or copy the contents of the `install.sh` function and run in your terminal.
+Alternatively copy the contents of the `install.sh` script  and run in your terminal.
 
 # Development Roadmap
-(TODO: I should probably use Github's Project page)
-
-
 ## 1. Preparing WSL, Github, Docker
 - [x] Setup WSL2 on Laptop
 - [x] Setup Github & Git fully  
 - [x] auto install docker on WSL2
 
 ## 2.1.1 MVP - Get Golang Going - Set up Golang Development Environment (GDE)
-- [ ] Start to Handmake:
+- [ ] Start to handmake:
     - [ ] A Golang CLI tool called 'init-me' that will invoke go-XXXX-me github modules
         - (In the future this will be a binary that developers can install)
     - [ ] A init.lua nvim script for editing Golang
