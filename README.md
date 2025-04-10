@@ -19,7 +19,7 @@ install if needed.
 *regretably, I didn't write down how I installed it correctly. I assume by now it's straightforward via Google/DuckDuckGo.*
 
 ## Step 2 - Install Debian
-Install Debian:
+Install Debian (FWIW, I use Debian 12. This script will work on that version. Can't confirm for others):
 ```
 wsl --install Debian
 ```
