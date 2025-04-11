@@ -37,7 +37,7 @@ sudo apt install curl --fix-missing
 
 ## Step 4: Download and execute the bash script
 ```
-curl -s https://raw.githubusercontent.com/PabloTheDeveloper/init-me/main/install.sh > init.sh
+curl -s https://raw.githubusercontent.com/PabloTheDeveloper/init-me/main/init.sh > init.sh
 ```
 Note: Generally, scripts installed this way are super risky. Read through it and any scripts like it to ensure nothing nefarious is happening.
 
