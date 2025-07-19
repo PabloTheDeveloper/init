@@ -55,11 +55,10 @@ Alternatively copy the contents of the `install.sh` script  and run in your term
         - (In the future this will be a binary that developers can install)
     - [ ] A init.lua nvim script for editing Golang
 - [ ] Generate Project Scaffolding:
-    - [ ] Start another Golang CLI tool claled `go-scaffold-me`
-    - [ ] template README.md, & source files, and add test
+    - [x] Start another Golang CLI tool called `golang-project-starter`
+    - [x] template README.md, & source files, and add test
     - [ ] Set up a Golang Dockerfile
         - It will assume gh, docker, and A Dockerfile exists
-    - [ ] Verify `go-scaffold-me` works
 - [ ] CI/CD Setup Automation:
     - [ ] CI w/ Github Actions
     - [ ] CD w/ Github Actions
@@ -77,7 +76,7 @@ Alternatively copy the contents of the `install.sh` script  and run in your term
 ## 2.1.2 MVP - Webbing Golang - Setup Golang Templates for Web Projects
 - [ ] Start to Handmake:
     - [ ] Basic Static Website
-        - [ ] Updating `go-scaffold-me` for this template
+        - [ ] Updating `golang-project-starter` for this template
         - [ ] Deploying on Digital Ocean
     - [ ] Form generating site w/ persistence (like formly but w/ GUI)
         - [ ] Allows authenticated users (email & password)
