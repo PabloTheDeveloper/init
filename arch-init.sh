@@ -54,6 +54,10 @@ gh repo clone PabloTheDeveloper/carbon
 # (sets up brave on wayland as well.)
 cp -R carbon/. ./
 
+echo "Installing packages to setup audio. It will work after restarting."
+# https://wiki.archlinux.org/title/PipeWire for details.
+# installing the below and rebooting works though.
+sudo pacman -S pipewire pipewire-docs wireplumber pipewire-audio sof-firmware pipewire-pulse pavucontrol
 # -------------------------------------------------------------------------------
 #  Installing Base Packages
 # -------------------------------------------------------------------------------
