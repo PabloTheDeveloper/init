@@ -21,7 +21,9 @@ sudo pacman -Sy
 # github cli to use github in the terminal.
 # acpi for power tracking which allows usage of the status bar.
 # wlsunset for nightshift mode.
-sudo pacman -S sway foot kanshi swaylock i3blocks base-devel git openssh github-cli acpi wlsunset
+# desktop-file-utils can tell us if a desktop file is
+# built correctly.
+sudo pacman -S sway foot kanshi swaylock i3blocks base-devel git openssh github-cli acpi wlsunset desktop-file-utils
 # Installing AUR package manager.
 git clone https://aur.archlinux.org/yay.git
 cd yay
