@@ -58,6 +58,14 @@ echo "Installing packages to setup audio. It will work after restarting."
 # https://wiki.archlinux.org/title/PipeWire for details.
 # installing the below and rebooting works though.
 sudo pacman -S pipewire pipewire-docs wireplumber pipewire-audio sof-firmware pipewire-pulse pavucontrol
+
+echo "installing icons and fonts."
+sudo pacman -S ttf-font-awesome
+
+echo "installing fish."
+sudo pacman -S fish
+sudo pacman -S less # used for diffing git working states.
+
 # -------------------------------------------------------------------------------
 #  Installing Base Packages
 # -------------------------------------------------------------------------------
