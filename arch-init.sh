@@ -66,6 +66,9 @@ echo "installing fish."
 sudo pacman -S fish
 sudo pacman -S less # used for diffing git working states.
 
+# To debug usb issues
+sudo pacman -S lsusb
+
 # -------------------------------------------------------------------------------
 #  Installing Base Packages
 # -------------------------------------------------------------------------------
