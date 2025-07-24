@@ -69,6 +69,8 @@ sudo pacman -S less # used for diffing git working states.
 # To debug usb issues
 sudo pacman -S lsusb
 
+# A better cat.
+sudo pacman -S batcat
 # -------------------------------------------------------------------------------
 #  Installing Base Packages
 # -------------------------------------------------------------------------------
@@ -163,3 +165,4 @@ else
   cd $HOME/repos
 	gh repo clone git@github.com:PabloTheDeveloper/init-me.git
 fi
+

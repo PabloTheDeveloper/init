@@ -16,3 +16,5 @@ make install
 # python)
 sudo apt-get install python-is-python3
 
+# A better cat
+sudo apt-get install batcat
