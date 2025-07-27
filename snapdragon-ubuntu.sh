@@ -1,4 +1,7 @@
 sudo apt-get install fonts-font-awesome fish less
+# switches shell to fish
+chsh -s $(which fish)
+
 sudo apt-get copyq
 # Startup copyq on each laptop startup.
 # install i3blocks pre-req
@@ -29,3 +32,6 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/DroidSansM
 unzip DroidSansMono.zip -d ~/.fonts
 fc-cache -fv
 echo "done!"
+
+# installing tmux
+sudo apt-get install tmux
