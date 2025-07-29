@@ -1,3 +1,6 @@
+# makes git config the first
+git config --global init.defaultBranch main
+
 sudo apt-get install fonts-font-awesome fish less
 # switches shell to fish
 chsh -s $(which fish)
@@ -35,3 +38,5 @@ echo "done!"
 
 # installing tmux
 sudo apt-get install tmux
+
+

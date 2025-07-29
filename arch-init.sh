@@ -144,6 +144,7 @@ username=${username:-"PabloTheDeveloper"}
 git config --global user.name "$username"
 
 gh config set editor $editor
+git config --global init.defaultBranch main
 # -------------------------------------------------------------------------------
 # Setting up SSH & cloning Init-Me 
 # -------------------------------------------------------------------------------
@@ -165,4 +166,5 @@ else
   cd $HOME/repos
 	gh repo clone git@github.com:PabloTheDeveloper/init-me.git
 fi
+
 
