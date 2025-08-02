@@ -40,3 +40,6 @@ echo "done!"
 sudo apt-get install tmux
 
 git config set advice.addIgnoredFile false
+# installing golang
+sudo apt install go golang-golang-x-tools
+
