@@ -145,6 +145,7 @@ git config --global user.name "$username"
 
 gh config set editor $editor
 git config --global init.defaultBranch main
+git config set advice.addIgnoredFile false
 # -------------------------------------------------------------------------------
 # Setting up SSH & cloning Init-Me 
 # -------------------------------------------------------------------------------

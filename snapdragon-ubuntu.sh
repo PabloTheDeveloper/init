@@ -39,4 +39,4 @@ echo "done!"
 # installing tmux
 sudo apt-get install tmux
 
-
+git config set advice.addIgnoredFile false
